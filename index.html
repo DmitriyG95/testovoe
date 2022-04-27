@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>тестовое</title>
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/var.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header">
+            <div class="header__logo">
+                <img src="images/header/logo.svg" alt="">
+            </div>
+            <nav class="filterblock">
+                <div class="filterblock__scroll">
+                    <button type="button" data-value="uzhas">
+                        Ужасы
+                    </button>
+                    <button type="button" data-value="kom">
+                        Комедия
+                    </button>
+                    <button type="button" data-value="action">
+                        Экшн
+                    </button>
+                    <button type="button" data-value="document">
+                        Документальные
+                    </button>
+                </div>
+                
+            </nav>
+            <div  class="header__list">
+                <div id="year" class="dropdown">
+                    <div class="dropdown__title">
+                        Годы выпуска
+                    </div>
+                    <div class="dropdown__list">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="country" class="dropdown">
+                    <div class="dropdown__title">
+                        Страны выпуска
+                    </div>
+                    <div class="dropdown__list">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="zhanr" class="dropdown">
+                    <div class="dropdown__title">
+                        Жанры
+                    </div>
+                    <div class="dropdown__list">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="films">
+            <div id="tag">Сбросить фильтр</div>
+            <div data-genre="document" class="films__card">
+                <div class="films__img">
+                    <img src="images/main/film1.webp" alt="">
+                </div>             
+                <div class="films__name">
+                   Первый оскар
+                </div>
+                <div class="films__bottom">
+                    <div class="films__date">
+                        2022 год
+                    </div>
+                    <div class="films__country">
+                        россия
+                    </div>
+                    <div  class="films__ganre">
+                        Документальные
+                    </div>
+                </div>
+                
+            </div>
+            <div data-genre="document" class="films__card">
+                <div class="films__img">
+                    <img src="images/main/film2.webp" alt="">
+                </div>             
+                <div class="films__name">
+                    романовы
+                </div>
+                <div class="films__bottom">
+                    <div class="films__date">
+                        2013 год
+                    </div>
+                    <div class="films__country">
+                        Россия
+                    </div>
+                    <div class="films__ganre">
+                        Документальные
+                    </div>
+                </div>
+                
+            </div>
+            <div data-genre="kom" class="films__card">
+                <div class="films__img">
+                    <img src="images/main/film3.webp" alt="">
+                </div>             
+                <div class="films__name">
+                    Странный фильм
+                </div>
+                <div class="films__bottom">
+                    <div class="films__date">
+                        2021 год
+                    </div>
+                    <div class="films__country">
+                        Зимбвабве
+                    </div>
+                    <div class="films__ganre">
+                        Комедия
+                    </div>
+                </div>
+                
+            </div>
+            <div data-genre="action" class="films__card">
+                <div class="films__img">
+                    <img src="images/main/film4.webp" alt="">
+                </div>             
+                <div class="films__name">
+                    Властелин колец
+                </div>
+                <div class="films__bottom">
+                    <div class="films__date">
+                       2001 год
+                    </div>
+                    <div class="films__country">
+                        США
+                    </div>
+                    <div class="films__ganre">
+                        Экшн
+                    </div>
+                </div>
+                
+            </div>
+            <div data-genre="kom" class="films__card">
+                <div class="films__img">
+                    <img src="images/main/film5.webp" alt="">
+                </div>             
+                <div class="films__name">
+                    Форрест гамп
+                </div>
+                <div class="films__bottom">
+                    <div class="films__date">
+                        1999 год
+                    </div>
+                    <div class="films__country">
+                        США
+                    </div>
+                    <div class="films__ganre">
+                        Комедия
+                    </div>
+                </div>
+                
+            </div>
+            <div data-genre="action" class="films__card">
+                <div class="films__img">
+                    <img src="images/main/film6.webp" alt="">
+                </div>             
+                <div class="films__name">
+                    ДВе крепости
+                </div>
+                <div class="films__bottom">
+                    <div class="films__date">
+                        2002 год
+                    </div>
+                    <div class="films__country">
+                        США
+                    </div>
+                    <div class="films__ganre">
+                        Экшен
+                    </div>
+                </div>
+                
+            </div>
+            <div data-genre="uzhas" class="films__card">
+                <div class="films__img">
+                    <img src="images/main/film7.webp" alt="">
+                </div>             
+                <div class="films__name">
+                    Ёлки
+                </div>
+                <div class="films__bottom">
+                    <div class="films__date">
+                        2015 год
+                    </div>
+                    <div class="films__country">
+                        Россия
+                    </div>
+                    <div class="films__ganre">
+                        Ужасы
+                    </div>
+                </div>
+                
+            </div>
+            <div data-genre="kom" class="films__card">
+                <div class="films__img">
+                    <img src="images/main/film8.webp" alt="">
+                </div>             
+                <div class="films__name">
+                    Да, я Скамото
+                </div>
+                <div class="films__bottom">
+                    <div class="films__date">
+                        2013 год
+                    </div>
+                    <div class="films__country">
+                        Япония
+                    </div>
+                    <div class="films__ganre">
+                        Комедия
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="pagination" onclick="pagination(event)">
+
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__name">
+            Дмитрий
+            <span id="smile">
+                &#128522;
+            </span>
+        </div>
+        <div class="footer__date">
+            28.04.2022
+        </div>
+    </div>
+</footer>
+<script src="js/js.js"></script>
+</body>
+</html>

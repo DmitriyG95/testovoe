@@ -1,0 +1,101 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto; }
+
+html, body {
+  font-family: 'Open Sans', sans-serif; }
+
+main {
+  margin: 30px 0 0 0; }
+
+.films {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px; }
+  .films__card {
+    padding: 35px;
+    border: 1px solid #0000ff;
+    border-radius: 5px; }
+  .films__img {
+    position: relative;
+    padding-bottom: 150%; }
+    .films__img img {
+      -o-object-fit: contain;
+         object-fit: contain;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 4; }
+  .films__bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .films__name {
+    margin: 20px 0 0 0;
+    font-weight: 700;
+    font-size: 20px; }
+  .films__date {
+    font-weight: 300;
+    font-size: 12px; }
+  @media (max-width: 1300px) {
+    .films {
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (max-width: 900px) {
+    .films {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) {
+    .films {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+
+#tag {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  background-color: #fff;
+  z-index: 5;
+  width: 100px;
+  height: 30px;
+  display: none;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 10px 5px 15px #000;
+          box-shadow: 10px 5px 15px #000;
+  cursor: pointer; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination span {
+    padding: 5px 10px;
+    border: 1px solid #C61717;
+    margin: 0 5px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer; }
+  .pagination span.paginator_active {
+    background-color: #C61717;
+    color: #fff; }

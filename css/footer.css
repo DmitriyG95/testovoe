@@ -1,0 +1,21 @@
+.footer {
+  margin-top: 30px; }
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px; }
+    .footer__name span {
+      display: none; }
+  .footer__date {
+    font-size: 18px;
+    font-weight: 400; }
